@@ -27,12 +27,18 @@ body {
     height: 80px;
 }
 .main-links li {
-    margin: 0 46px;
+    margin: 0 23px;
+}
+.logo {
+    margin-left: 113px;
 }
 .upper-menu,
 .main-links {
     display: flex; 
     align-items: center;
+}
+.contact-info a.contact-tel {
+    padding-left: 50px;
 }
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -69,10 +75,14 @@ line-height: 1.14;
     color: var(--deafult-dark-font);
 }
 .main-links a,
-a.contact {
+a.contact-mail .contact-tel {
     text-decoration: none;
 }
-a.contact {
+.contact-info {
+    margin-right: 113px;
+}
+.contact-mail,
+.contact-tel {
     color: var(--grey-font);
     font-weight: 500;
     font-size: 14px;
@@ -173,7 +183,8 @@ a.contact {
     color: var(--white-font);
 }
 .company-street,
-.lower-menu a.contact {
+.lower-menu a.contact-tel,
+.lower-menu a.contact-mail {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
