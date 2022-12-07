@@ -94,7 +94,7 @@ a.contact-mail .contact-tel {
     line-height: 1.36;
     color: var(--white-font);
     text-align: center;
-    max-width: 696px;
+    max-width: 654px;
     margin: 0;
     padding-bottom: 30px;
     /* padding: 200px 252px 280px 252px;
@@ -122,31 +122,61 @@ a.contact-mail .contact-tel {
     justify-content: center;
  } */
 /* .service-button {padding: 500px 200px 500px;} */
-.articles h5 {
+.title-info {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
 }
-.articles p {
+.text-info {
     font-size: 14px;
     line-height: 1.71;
     color: var(--grey-font);
 }
-.what-we-do h2,
-.our-team h2 {
+.articles {
+    display: flex;
+    gap: 30px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin: 0;
+}
+.our-work-title,
+.our-team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
+    text-align: center;
+}
+.our-work-list {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 0;
+}
+.our-work,
+.our-team {
+padding-top: 94px;
+padding-bottom: 94px;
+}
+.our-team-list {
+    display: flex;
+    padding: 0;
 }
 .workers-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    text-align: center;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 .workplace {
     font-size: 16px;
     line-height: 1.18;
     color: var(--grey-font);
+    text-align: center;
+    display: block;
+    padding-bottom: 30px;
 }
 .project-name {
     font-weight: 700;
@@ -159,14 +189,22 @@ a.contact-mail .contact-tel {
     color: var(--grey-font);
 }
 .projects-list,
-.what-we-do ul,
-.our-team ul,
+.our-work-list,
+.our-team-list,
 .main-links,
 .articles {
     list-style-type: none;
 }
 .our-team {
     background-color: var(--white-background);
+}
+.our-team-card {
+display: inline-block;
+padding-left: 0;
+padding-right: 30px;
+align-items: center;
+background-color: var(--white-font);
+
 }
 .project-button button {
     font-family: 'Roboto', sans-serif;
