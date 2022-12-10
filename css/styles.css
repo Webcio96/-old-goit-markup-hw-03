@@ -102,8 +102,6 @@ line-height: 1.14;
     max-width: 654px;
     margin: 0;
     padding-bottom: 30px;
-    /* padding: 200px 252px 280px 252px;
-    margin: 0 0; */
 }
 .service-button {
     font-family: 'Roboto', sans-serif;
@@ -121,12 +119,12 @@ line-height: 1.14;
 .main-header {
     height: 600px;
 }
-
-/* .test {
-    display
-    justify-content: center;
- } */
-/* .service-button {padding: 500px 200px 500px;} */
+.title-box {
+    padding: 200px 250px 280px 250px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
 .title-info {
     font-weight: 700;
     font-size: 14px;
@@ -217,6 +215,26 @@ padding-bottom: 94px;
 align-items: center;
 background-color: var(--white-font);
 }
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    align-items: center;
+    max-width: 1200px;
+    padding: 0;  
+}
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #EEEEEE;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-right: 30px;  
+}
+.last {
+    margin-right: 0;
+}
 .project-button button {
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
@@ -228,14 +246,23 @@ background-color: var(--white-font);
     border: none; 
     border-radius: 4px;
 }
+.project-section {
+    margin-top: 94px;
+    max-width: 1206px;
+}
+.project-button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 54px;
+    gap: 8px;
+}
 .lower-menu a.logo {
     color: var(--white-font);
     padding-bottom: 20px;
 }
 .company-street,
 .lower-contact-mail,
-.lower-contact-tel
-{
+.lower-contact-tel {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -264,8 +291,7 @@ a.mail-underline {
     padding-top: 20px;
     margin-left: 113px;
 }
-
-.test {
+.title-box {
     padding: 200px 250px 280px 250px;
     display: flex;
     flex-direction:column;

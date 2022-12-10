@@ -19,6 +19,7 @@
     <body>
         <header>
             <div class="container">
+            <div class="nav-site">
             <nav class="upper-menu">
                 <a class="logo" href="index.html"
                     ><span class="web">Web</span>Studio</a
@@ -31,14 +32,17 @@
                     <li><a href="#">Kontakt</a></li>
                 </ul>
             </nav>
+            <div class="contact-info">
             <a class="contact-mail" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
             >
             <a class="contact-tel" href="tel:+48111111111">+48 111 111 111</a>
             </div>
+            </div>
+            </div>
         </header>
         <main>
-            <div class="container">
+            <div class="container project-section">
             <!--przyciski-->
             <div class="project-button">
                 <button type="button">Wszystkie</button>
@@ -50,7 +54,7 @@
             <!--zdjęcia-->
             <div>
                 <ul class="projects-list">
-                    <li>
+                    <li class="project-card">
                         <img
                             src="images/portfolio/technocrack.jpg"
                             alt="zdjęcie przedstawia laptopa z otwartą stroną internetową"
@@ -60,7 +64,7 @@
                         <span class="project-name">Technocrack</span>
                         <span class="description">Strona internetowa</span>
                     </li>
-                    <li>
+                    <li class="project-card">
                         <img
                             src="images/portfolio/new-orlean.jpg"
                             alt="zdjęcie przedstawia dwóch koszykarzy"
@@ -72,7 +76,7 @@
                         >
                         <span class="description">Dizajn</span>
                     </li>
-                    <li>
+                    <li class="project-card last">
                         <img
                             src="images/portfolio/seafood.jpg"
                             alt="zdjęcie przedstawia logo restauracji z owocami morza"
@@ -82,7 +86,7 @@
                         <span class="project-name">Restauracja Seafood</span>
                         <span class="description">Aplikacja</span>
                     </li>
-                    <li>
+                    <li class="project-card">
                         <img
                             src="images/portfolio/project-prime.jpg"
                             alt="zdjęcie przedstawia słuchawki bezprzewodowe"
@@ -92,7 +96,7 @@
                         <span class="project-name">Projekt Prime</span>
                         <span class="description">Marketing</span>
                     </li>
-                    <li>
+                    <li class="project-card">
                         <img
                             src="images/portfolio/project-boxes.jpg"
                             alt="zdjęcie przedstawia kartony"
@@ -102,7 +106,7 @@
                         <span class="project-name">Projekt Boxes</span>
                         <span class="description">Aplikacja</span>
                     </li>
-                    <li>
+                    <li class="project-card last">
                         <img
                             src="images/portfolio/no-borders.jpg"
                             alt="zdjęcie przedstawia monitor"
@@ -114,7 +118,7 @@
                         >
                         <span class="description">Strona internetowa</span>
                     </li>
-                    <li>
+                    <li class="project-card">
                         <img
                             src="images/portfolio/limited-edition.jpg"
                             alt="zdjęcie przedstawia czasopismo"
@@ -126,7 +130,7 @@
                         >
                         <span class="description">Dizajn</span>
                     </li>
-                    <li>
+                    <li class="project-card">
                         <img
                             src="images/portfolio/project-lab.jpg"
                             alt="zdjęcie przedstawia etykietę na której widnieje napis Projekt LAB"
@@ -136,7 +140,7 @@
                         <span class="project-name">Projekt LAB</span>
                         <span class="description">Marketing</span>
                     </li>
-                    <li>
+                    <li class="project-card last">
                         <img
                             src="images/portfolio/growing-business.jpg"
                             alt="zdjęcie przedstawia laptopa z otwartą stroną internetową"
@@ -150,22 +154,24 @@
             </div>
             </div>
         </main>
-        <footer class="lower-menu">
+        <footer>
             <div class="container">
+                <section class="lower-menu">
+                    <div class="lower-box">
             <a class="logo lower-logo" href="index.html"
                 ><span class="web">Web</span>Studio</a
             >
-            <address>
+            <address class="correspondence">
                 <span class="company-street"
                     >m. Warszawa, Aleje Jerozolimskie 21</span
                 >
                 <a
-                    class="contact mail-underline"
-                    href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                >
-                <a class="contact" href="tel:+48111111111">+48 111 111 111</a>
+                    class="lower-contact-mail mail-underline"
+                    href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="lower-contact-tel" href="tel:+48111111111">+48 111 111 111</a>
             </address>
+            </div>
+            </section>
             </div>
         </footer>
     </body>
