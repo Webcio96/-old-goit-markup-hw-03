@@ -75,14 +75,19 @@ line-height: 1.14;
     color: var(--deafult-dark-font);
 }
 .main-links a,
-a.contact-mail .contact-tel {
+.contact-mail,
+.contact-tel,
+.lower-contact-mail,
+.lower-contact-tel {
     text-decoration: none;
 }
 .contact-info {
     margin-right: 113px;
 }
 .contact-mail,
-.contact-tel {
+.contact-tel,
+.lower-contact-mail,
+.lower-contact-tel {
     color: var(--grey-font);
     font-weight: 500;
     font-size: 14px;
@@ -145,21 +150,29 @@ a.contact-mail .contact-tel {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+    margin: 0;
+    padding-bottom: 50px;
 }
 .our-work-list {
     display: flex;
     gap: 30px;
     align-items: center;
     padding: 0;
+    margin: 0;
 }
-.our-work,
-.our-team {
-padding-top: 94px;
+.our-work {
+/* padding-top: 94px; */
 padding-bottom: 94px;
 }
+.our-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
 .our-team-list {
     display: flex;
     padding: 0;
+    gap: 30px;
+    margin: 0;
 }
 .workers-name {
     font-weight: 500;
@@ -169,6 +182,7 @@ padding-bottom: 94px;
     display: block;
     padding-top: 30px;
     padding-bottom: 10px;
+    margin: 0;
 }
 .workplace {
     font-size: 16px;
@@ -177,6 +191,7 @@ padding-bottom: 94px;
     text-align: center;
     display: block;
     padding-bottom: 30px;
+    margin: 0;
 }
 .project-name {
     font-weight: 700;
@@ -199,12 +214,8 @@ padding-bottom: 94px;
     background-color: var(--white-background);
 }
 .our-team-card {
-display: inline-block;
-padding-left: 0;
-padding-right: 30px;
 align-items: center;
 background-color: var(--white-font);
-
 }
 .project-button button {
     font-family: 'Roboto', sans-serif;
@@ -219,20 +230,26 @@ background-color: var(--white-font);
 }
 .lower-menu a.logo {
     color: var(--white-font);
+    padding-bottom: 20px;
 }
 .company-street,
-.lower-menu a.contact-tel,
-.lower-menu a.contact-mail {
+.lower-contact-mail,
+.lower-contact-tel
+{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+}
+.lower-contact-mail {
+    padding-bottom: 9px;
 }
 .lower-menu a.contact {
     color: var(--footer-contact-font);
 }
 .company-street {
     color: var(--white-font);
+    padding-bottom: 9px;
 }
 a.mail-underline {
     text-decoration: underline;
@@ -241,10 +258,22 @@ a.mail-underline {
 .main-header {
     background-color: var(--dark-background);
 }
+.correspondence {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-left: 113px;
+}
 
 .test {
     padding: 200px 250px 280px 250px;
     display: flex;
     flex-direction:column;
     align-items: center;
+}
+.lower-menu {
+    height: 252px;
+}
+.lower-box {
+    padding-top: 60px;
 }
