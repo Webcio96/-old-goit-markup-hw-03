@@ -231,14 +231,6 @@ body {
     padding: 0;
     gap: 30px;
 }
-.project-card {
-    background-color: #ffffff;
-    border: 1px solid #eeeeee;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin-bottom: 30px;
-}
 .project-button button {
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
@@ -249,16 +241,25 @@ body {
     outline: none;
     border: none;
     border-radius: 4px;
-}
-.project-section {
-    margin-top: 94px;
-    max-width: 1206px;
+    width: 121px;
+    height: 38px;
 }
 .project-button {
     display: flex;
     justify-content: center;
     padding-bottom: 54px;
     gap: 8px;
+}
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.project-section {
+    margin-top: 94px;
 }
 .lower-menu a.logo {
     color: var(--white-font);
@@ -287,7 +288,7 @@ a.mail-underline {
 }
 .lower-menu {
     background-color: var(--dark-background);
-    padding-bottom: 69px;
+    padding-bottom: 68.02px;
 }
 .correspondence {
     display: flex;
