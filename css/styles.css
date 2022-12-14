@@ -7,7 +7,6 @@
     --white-background: #f5f4fa;
     --footer-contact-font: #ffffff99;
     --dark-background: #2f303a;
-    --body-bg: #e5e5e5;
 }
 
 ul,
@@ -24,7 +23,6 @@ p {
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--deafult-dark-font);
-    background-color: var(--body-bg);
 }
 .container {
     max-width: 1200px;
