@@ -1,25 +1,37 @@
 :root {
---deafult-dark-font: #212121;
---grey-font: #757575;
---white-font: #ffffff;
---logo-font: #000000;
---blue-font: #2196f3;
---white-background: #f5f4fa;
---footer-contact-font: #ffffff99;
---dark-background: #2f303a;
+    --deafult-dark-font: #212121;
+    --grey-font: #757575;
+    --white-font: #ffffff;
+    --logo-font: #000000;
+    --blue-font: #2196f3;
+    --white-background: #f5f4fa;
+    --footer-contact-font: #ffffff99;
+    --dark-background: #2f303a;
+    --body-bg: #e5e5e5;
 }
+
+ul,
+h1,
+h2,
+h3,
+h4,
+span,
+p {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--deafult-dark-font);
+    background-color: var(--body-bg);
 }
 .container {
     max-width: 1200px;
-    padding: 0 15px;
+    padding: 0;
     margin: 0 auto;
 }
 .nav-site {
-    border-bottom: 1px solid #ECECEC;
-    box-shadow: 0 4px 4px #00000025;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,10 +43,11 @@ body {
 }
 .logo {
     margin-left: 113px;
+    margin-right: 93px;
 }
 .upper-menu,
 .main-links {
-    display: flex; 
+    display: flex;
     align-items: center;
 }
 .contact-info a.contact-tel {
@@ -52,11 +65,7 @@ body {
 .main-links a:hover,
 .main-links a:focus,
 .contact:hover,
-.web,
-.lower-menu .contact:focus,
-.lower-menu .contact:hover,
-.contact:focus
-{
+.web {
     color: var(--blue-font);
     outline: none;
 }
@@ -66,9 +75,9 @@ body {
     background-color: var(--blue-font);
 }
 .main-links a {
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
 }
 .main-links a,
 .project-button button {
@@ -76,18 +85,14 @@ line-height: 1.14;
 }
 .main-links a,
 .contact-mail,
-.contact-tel,
-.lower-contact-mail,
-.lower-contact-tel {
+.contact-tel {
     text-decoration: none;
 }
 .contact-info {
     margin-right: 113px;
 }
 .contact-mail,
-.contact-tel,
-.lower-contact-mail,
-.lower-contact-tel {
+.contact-tel {
     color: var(--grey-font);
     font-weight: 500;
     font-size: 14px;
@@ -116,14 +121,15 @@ line-height: 1.14;
     border-radius: 4px;
     padding: 10px 42px 10px 41px;
 }
-.main-header {
-    height: 600px;
-}
 .title-box {
-    padding: 200px 250px 280px 250px;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
+}
+.main-header {
+    padding-top: 200px;
+    padding-bottom: 201px;
+    background-color: var(--dark-background);
 }
 .title-info {
     font-weight: 700;
@@ -159,13 +165,11 @@ line-height: 1.14;
     margin: 0;
 }
 .our-work {
-/* padding-top: 94px; */
-padding-bottom: 94px;
+    padding-bottom: 94px;
 }
 .our-team {
-    padding-top: 94px;
     padding-bottom: 94px;
-    }
+}
 .our-team-list {
     display: flex;
     padding: 0;
@@ -212,8 +216,11 @@ padding-bottom: 94px;
     background-color: var(--white-background);
 }
 .our-team-card {
-align-items: center;
-background-color: var(--white-font);
+    background-color: var(--white-font);
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .projects-list {
     display: flex;
@@ -221,19 +228,16 @@ background-color: var(--white-font);
     margin: 0;
     align-items: center;
     max-width: 1200px;
-    padding: 0;  
+    padding: 0;
+    gap: 30px;
 }
 .project-card {
     background-color: #ffffff;
-    border: 1px solid #EEEEEE;
+    border: 1px solid #eeeeee;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     margin-bottom: 30px;
-    margin-right: 30px;  
-}
-.last {
-    margin-right: 0;
 }
 .project-button button {
     font-family: 'Roboto', sans-serif;
@@ -242,8 +246,8 @@ background-color: var(--white-font);
     font-size: 16px;
     line-height: 1.62;
     background-color: var(--white-background);
-    outline: none; 
-    border: none; 
+    outline: none;
+    border: none;
     border-radius: 4px;
 }
 .project-section {
@@ -281,9 +285,9 @@ background-color: var(--white-font);
 a.mail-underline {
     text-decoration: underline;
 }
-.lower-menu,
-.main-header {
+.lower-menu {
     background-color: var(--dark-background);
+    padding-bottom: 69px;
 }
 .correspondence {
     display: flex;
@@ -291,15 +295,23 @@ a.mail-underline {
     padding-top: 20px;
     margin-left: 113px;
 }
-.title-box {
-    padding: 200px 250px 280px 250px;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-}
-.lower-menu {
-    height: 252px;
-}
 .lower-box {
     padding-top: 60px;
+}
+.lower-menu .contact:focus,
+.lower-menu .contact:hover,
+.contact:focus {
+    color: var(--blue-font);
+    outline: none;
+}
+.lower-contact-mail,
+.lower-contact-tel {
+    text-decoration: none;
+}
+.lower-contact-mail,
+.lower-contact-tel {
+    color: var(--grey-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
 }
