@@ -14,7 +14,6 @@ h1,
 h2,
 h3,
 h4,
-span,
 p {
     margin: 0;
     padding: 0;
@@ -34,22 +33,30 @@ body {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    height: 80px;
+    padding: 24px 0 25px;
 }
-.main-links li {
-    margin: 0 23px;
+.header-wrapper > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.logo {
-    margin-left: 113px;
-    margin-right: 93px;
+.section {
+    padding: 94px 0;
+}
+.main-links {
+    gap: 46px;
 }
 .upper-menu,
 .main-links {
     display: flex;
     align-items: center;
 }
-.contact-info a.contact-tel {
-    padding-left: 50px;
+.contact-info {
+    display: flex;
+    gap: 50px;
+}
+.upper-menu {
+    gap: 93px;
 }
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -86,9 +93,6 @@ body {
 .contact-tel {
     text-decoration: none;
 }
-.contact-info {
-    margin-right: 113px;
-}
 .contact-mail,
 .contact-tel {
     color: var(--grey-font);
@@ -102,9 +106,7 @@ body {
     line-height: 1.36;
     color: var(--white-font);
     text-align: center;
-    max-width: 654px;
-    margin: 0;
-    padding-bottom: 30px;
+    margin: 106px 280px 30px;
 }
 .service-button {
     font-family: 'Roboto', sans-serif;
@@ -113,20 +115,20 @@ body {
     line-height: 1.87;
     background-color: var(--blue-font);
     color: var(--white-font);
-    display: flex;
     outline: none;
     border: none;
     border-radius: 4px;
-    padding: 10px 42px 10px 41px;
+    margin-bottom: 106px;
+    width: 200px;
+    height: 50px;
 }
 .title-box {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .main-header {
-    padding-top: 200px;
-    padding-bottom: 201px;
     background-color: var(--dark-background);
 }
 .title-info {
@@ -142,8 +144,6 @@ body {
 .articles {
     display: flex;
     gap: 30px;
-    padding-top: 94px;
-    padding-bottom: 94px;
     margin: 0;
 }
 .our-work-title,
@@ -162,11 +162,8 @@ body {
     padding: 0;
     margin: 0;
 }
-.our-work {
-    padding-bottom: 94px;
-}
-.our-team {
-    padding-bottom: 94px;
+.sec-marg {
+    margin-top: -94px;
 }
 .our-team-list {
     display: flex;
@@ -193,6 +190,9 @@ body {
     padding-bottom: 30px;
     margin: 0;
 }
+.main-pad {
+    padding: 94px 0;
+}
 .project-name {
     font-weight: 700;
     font-size: 18px;
@@ -210,15 +210,15 @@ body {
 .articles {
     list-style-type: none;
 }
-.our-team {
-    background-color: var(--white-background);
-}
 .our-team-card {
     background-color: var(--white-font);
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+}
+.grey-bg {
+    background-color: var(--white-background);
 }
 .projects-list {
     display: flex;
@@ -241,6 +241,7 @@ body {
     border-radius: 4px;
     width: 121px;
     height: 38px;
+    padding: 0;
 }
 .project-button {
     display: flex;
@@ -250,18 +251,20 @@ body {
 }
 .project-card {
     background-color: #ffffff;
-    border: 1px solid #eeeeee;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     margin-bottom: 30px;
 }
-.project-section {
-    margin-top: 94px;
+.border {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: 0;
 }
 .lower-menu a.logo {
     color: var(--white-font);
-    padding-bottom: 20px;
 }
 .company-street,
 .lower-contact-mail,
@@ -271,31 +274,19 @@ body {
     font-size: 14px;
     line-height: 1.71;
 }
-.lower-contact-mail {
-    padding-bottom: 9px;
-}
 .lower-menu a.contact {
     color: var(--footer-contact-font);
 }
 .company-street {
     color: var(--white-font);
-    padding-bottom: 9px;
 }
 a.mail-underline {
     text-decoration: underline;
 }
-.lower-menu {
-    background-color: var(--dark-background);
-    padding-bottom: 68.02px;
-}
 .correspondence {
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
-    margin-left: 113px;
-}
-.lower-box {
-    padding-top: 60px;
+    gap: 9px;
 }
 .lower-menu .contact:focus,
 .lower-menu .contact:hover,
@@ -305,12 +296,24 @@ a.mail-underline {
 }
 .lower-contact-mail,
 .lower-contact-tel {
-    text-decoration: none;
-}
-.lower-contact-mail,
-.lower-contact-tel {
     color: var(--grey-font);
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.71;
+    width: fit-content;
+    text-decoration: none;
+}
+.footer-wrapper {
+    padding: 60px 0;
+    background: var(--dark-background);
+}
+.footer-wrapper > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lower-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
